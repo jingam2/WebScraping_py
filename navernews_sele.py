@@ -47,7 +47,7 @@ while click_count < max_clicks:
         break
 
 # 페이지의 모든 <strong> 태그를 찾습니다.
-strong_tags = driver.find_elements(By.TAG_NAME, 'strong') # 재무재표같은것도 태그활용하여 크롤링
+strong_tags = driver.find_elements(By.TAG_NAME, 'strong') # 다른 정보들도 태그활용하여 크롤링
 
 for tag in strong_tags:
     text = tag.text.strip()
